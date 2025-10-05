@@ -1,0 +1,914 @@
+.logoPic {
+  justify-content: center;
+
+}
+
+.contactUs {
+  display: flex;
+  justify-content: center;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: xx-large;
+}
+
+.hospitalPic
+{
+  margin: 0px;
+  padding: 0px;
+}
+
+
+
+/* Base */
+body {
+  font-family: Arial, sans-serif;
+  color: #0e0f7d;
+  background: white;
+  margin: 30px;
+  padding: 0;
+  height: 100%;
+  font-size: large;
+}
+
+.highlight-span {
+
+  font-weight: bold;
+}
+
+.TeamHeading
+{
+  text-align: center;
+  justify-content: center;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 50px;
+}
+
+.specificity-demo {
+  color: #240a77;
+  
+  text-align: center;
+  font-size:  x-large;
+  background: red;
+  color: yellow;
+  font-weight: bold;
+  padding: 20px;
+  margin-top: 40px;
+  margin-left: 20px;
+  margin-right: 20px;
+  border-radius: 10px;
+  animation: blink 3s infinite;
+}
+
+.MissionHeading
+{
+  font-size: 50px;
+  font-family: 'Times New Roman', Times, serif;
+  text-align: center;
+  color:#fdfd00
+}
+
+.custom-div {
+  background: #f0f8ff;
+  padding: 1rem;
+  margin: 1rem 0;
+  border-left: 4px solid #ffff00;
+  border-radius: 10px;
+  color: #240a77;
+}
+
+/* Navigation */
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #240a77;
+  padding: 10px 20px;
+}
+
+.nav {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.nav li a {
+  color: white;
+  text-decoration: none;
+  margin: 0 1rem;
+}
+
+.nav li a:hover {
+  text-decoration: underline;
+}
+
+/* Welcome */
+.welcomeMessege {
+  display: flex;
+  justify-content: center;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: xx-large;
+  
+}
+
+/* About hospital section */
+.about-hospital {
+  
+  padding: 1rem;
+  background: #ededfd;
+  border-left: 4px solid #004080;
+  border-radius: 6px;
+  line-height: 1.6;
+  margin: 20px;
+}
+
+.MissionVision
+{
+  padding: 1rem;
+  background: #240a77;
+  border-left: 4px solid #f6ff00;
+  border-radius: 6px;
+  line-height: 1.6;
+  color: white;
+  margin: 20px;
+  font-size: x-large;
+}
+
+/* Services with image */
+.services-content {
+  display: flex;
+  align-items: flex-start;
+  
+  margin-left:50px;
+}
+
+.services-text {
+  flex: 2;
+}
+
+.childPic {
+  flex: 3;
+  margin-top: 20px;
+  margin-bottom: 20px;
+
+}
+
+.childPic img {
+  max-width: 100%;
+  border-radius: 8px;
+}
+
+/* Tables */
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th {
+  background: rgb(9, 10, 80);
+  color: #ffffff;
+  border: 1px solid #666;
+  padding: 8px;
+}
+
+td {
+  border: 1px solid #666;
+  padding: 8px;
+}
+
+/* Emergency row */
+.emergency-row td {
+  background: red;
+  color: yellow;
+  font-weight: bold;
+  text-align: center;
+  animation: blink 1.7s infinite;
+}
+
+@keyframes blink {
+
+  0%,
+  50%,
+  100% {
+    opacity: 1;
+  }
+
+  25%,
+  75% {
+    opacity: 0;
+  }
+}
+
+
+/* Footer */
+.site-footer {
+  background: #240a77;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+}
+
+.site-footer p {
+  margin: 0.5rem 0;
+}
+
+.site-footer .imp-text {
+  display: inline-block;
+  background: #004080;
+  color: yellow;
+  padding: 0.3rem 0.6rem;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: bold;
+  margin: 0.2rem;
+}
+
+.site-footer .imp-text:hover {
+  background: rgb(255, 255, 255);
+  color: #240a77;
+}
+
+.data {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex: 1;
+
+}
+
+.afterWelcome {
+  text-align: center;
+}
+
+/* Base style for all audio buttons */
+.btn-audio,
+.about-playbtn,
+.about-stopbtn {
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin: 30px 0px 0px 0px;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* Play buttons */
+.btn-audio.play,
+.about-playbtn {
+  background-color: #28a745;
+}
+
+.btn-audio.play:hover,
+.about-playbtn:hover {
+  background-color: #1e7e34;
+  transform: translateY(-2px);
+}
+
+.btn-audio.play:active,
+.about-playbtn:active {
+  background-color: #155d27;
+  transform: translateY(0);
+}
+
+/* Stop buttons */
+.btn-audio.stop,
+.about-stopbtn {
+  background-color: #dc3545;
+}
+
+.btn-audio.stop:hover,
+.about-stopbtn:hover {
+  background-color: #a71d2a;
+  transform: translateY(-2px);
+}
+
+.btn-audio.stop:active,
+.about-stopbtn:active {
+  background-color: #7a111e;
+  transform: translateY(0);
+}
+
+/*  Contact Form */
+form {
+  padding: 12px;
+  width: 100%;
+  max-width: 400px;
+  border: 2px solid darkblue;
+  border-radius: 6px;
+  background: #f0f6ff;
+  margin: 10px auto;
+  font-family: Arial, sans-serif;
+  font-size: 13px;
+  box-sizing: border-box;
+  margin-bottom: 30px;
+}
+
+/* Labels */
+form label {
+  display: block;
+  margin-bottom: 2px;
+  font-weight: bold;
+  font-size: 12px;
+  color: #240a77;
+}
+
+/* Inputs  */
+form input,
+form textarea {
+  width: 100%;
+  padding: 6px;
+  margin-bottom: 8px;
+  border: 1px solid #cfd8e3;
+  border-radius: 4px;
+  font-size: 12px;
+  font-family: inherit;
+  box-sizing: border-box;
+}
+
+/* Textarea */
+form textarea {
+  min-height: 60px;
+  resize: vertical;
+}
+
+/* Buttons */
+form button {
+  background: #240a77;
+  color: white;
+  padding: 6px 12px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 12px;
+  margin-right: 6px;
+
+}
+
+form button:hover {
+  background: #004080;
+}
+
+/* Contact Form Buttons */
+form .fancy-btn {
+  background: #240a77;
+  color: white;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  margin: 0.5rem;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+form .fancy-btn:hover {
+  background: #240a77;
+  color: rgb(255, 213, 0);
+  text-shadow: #0056b3;
+  
+}
+
+/* Ensure buttons dont stick together */
+form div {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.rounded {
+  padding: 10px 16px;
+  font-size: 18px;
+  margin: 5px;
+  background-color: white;
+  color: darkblue;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.rounded:hover {
+  background-color: #0056b3;
+}
+
+.rounded:active {
+  background-color: #004080;
+  transform: scale(0.95);
+}
+
+
+@media (prefers-color-scheme: dark) {
+  /* body {
+    background: black;
+    color: #ffffff;
+  }
+
+  .navigation {
+    background: #1a1a40;
+  }
+
+  .nav li a {
+    color: #ffeb3b;
+  }
+
+  .nav li a:hover {
+    text-decoration: underline;
+    color: #ffffff;
+  }
+
+  .about-hospital {
+    background: #1e1e2f;
+    border-left-color: #90caf9;
+  }
+
+  .specificity-demo {
+    color: white;
+  }
+
+  .site-footer {
+    background: #1a1a40;
+    color: #ccc;
+  }
+
+  .site-footer .imp-text {
+    background: #004080;
+    color: #ffeb3b;
+  }
+
+  .site-footer .imp-text:hover {
+    background: #0056b3;
+    color: #fff;
+  }
+
+  form {
+    background: #1f1f2e;
+    border-color: #003366;
+  }
+
+  form label {
+    color: white;
+  }
+
+  .highlight-span {
+    color: yellow;
+  }
+
+  .custom-div {
+    color: white;
+    background-color: #1f1f2e;
+  }
+
+  form input,
+  form textarea {
+    background: white;
+    color: black;
+    border-color: #666;
+  }
+
+  .rounded {
+    background-color: #222;
+    color: #ffeb3b;
+  }
+
+  .rounded:hover {
+    background-color: #333;
+    color: #ffffff;
+  }
+
+  .emergency-row td {
+    background: #b30000;
+    color: #ffff00;
+  }
+
+  .btn-audio.play,
+  .about-playbtn {
+    background-color: #2e7d32;
+  }
+
+  .btn-audio.stop,
+  .about-stopbtn {
+    background-color: #c62828;
+  }
+
+  
+  .services-content {
+    background-color: #121212;
+  }
+
+  .childPic img {
+    border: 2px solid #444;
+  }
+
+  .logoPic {
+    background-color: white;
+  } */
+  .logoPic {
+  justify-content: center;
+
+}
+
+.contactUs {
+  display: flex;
+  justify-content: center;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: xx-large;
+}
+
+.hospitalPic
+{
+  margin: 0px;
+  padding: 0px;
+}
+
+
+
+/* Base */
+body {
+  font-family: Arial, sans-serif;
+  color: #0e0f7d;
+  background: white;
+  margin: 30px;
+  padding: 0;
+  height: 100%;
+  font-size: large;
+}
+
+.highlight-span {
+
+  font-weight: bold;
+}
+
+.TeamHeading
+{
+  text-align: center;
+  justify-content: center;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 50px;
+}
+
+.specificity-demo {
+  color: #240a77;
+  
+  text-align: center;
+  font-size:  x-large;
+  background: red;
+  color: yellow;
+  font-weight: bold;
+  padding: 20px;
+  margin-top: 40px;
+  margin-left: 20px;
+  margin-right: 20px;
+  border-radius: 10px;
+  animation: blink 3s infinite;
+}
+
+.MissionHeading
+{
+  font-size: 50px;
+  font-family: 'Times New Roman', Times, serif;
+  text-align: center;
+  color:#fdfd00
+}
+
+.custom-div {
+  background: #f0f8ff;
+  padding: 1rem;
+  margin: 1rem 0;
+  border-left: 4px solid #ffff00;
+  border-radius: 10px;
+  color: #240a77;
+}
+
+/* Navigation */
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #240a77;
+  padding: 10px 20px;
+}
+
+.nav {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.nav li a {
+  color: white;
+  text-decoration: none;
+  margin: 0 1rem;
+}
+
+.nav li a:hover {
+  text-decoration: underline;
+}
+
+/* Welcome */
+.welcomeMessege {
+  display: flex;
+  justify-content: center;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: xx-large;
+  
+}
+
+/* About hospital section */
+.about-hospital {
+  
+  padding: 1rem;
+  background: #ededfd;
+  border-left: 4px solid #004080;
+  border-radius: 6px;
+  line-height: 1.6;
+  margin: 20px;
+}
+
+.MissionVision
+{
+  padding: 1rem;
+  background: #240a77;
+  border-left: 4px solid #f6ff00;
+  border-radius: 6px;
+  line-height: 1.6;
+  color: white;
+  margin: 20px;
+  font-size: x-large;
+}
+
+/* Services with image */
+.services-content {
+  display: flex;
+  align-items: flex-start;
+  
+  margin-left:50px;
+}
+
+.services-text {
+  flex: 2;
+}
+
+.childPic {
+  flex: 3;
+  margin-top: 20px;
+  margin-bottom: 20px;
+
+}
+
+.childPic img {
+  max-width: 100%;
+  border-radius: 8px;
+}
+
+/* Tables */
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th {
+  background: rgb(9, 10, 80);
+  color: #ffffff;
+  border: 1px solid #666;
+  padding: 8px;
+}
+
+td {
+  border: 1px solid #666;
+  padding: 8px;
+}
+
+/* Emergency row */
+.emergency-row td {
+  background: red;
+  color: yellow;
+  font-weight: bold;
+  text-align: center;
+  animation: blink 1.7s infinite;
+}
+
+@keyframes blink {
+
+  0%,
+  50%,
+  100% {
+    opacity: 1;
+  }
+
+  25%,
+  75% {
+    opacity: 0;
+  }
+}
+
+
+/* Footer */
+.site-footer {
+  background: #240a77;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+}
+
+.site-footer p {
+  margin: 0.5rem 0;
+}
+
+.site-footer .imp-text {
+  display: inline-block;
+  background: #004080;
+  color: yellow;
+  padding: 0.3rem 0.6rem;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: bold;
+  margin: 0.2rem;
+}
+
+.site-footer .imp-text:hover {
+  background: rgb(255, 255, 255);
+  color: #240a77;
+}
+
+.data {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex: 1;
+
+}
+
+.afterWelcome {
+  text-align: center;
+}
+
+/* Base style for all audio buttons */
+.btn-audio,
+.about-playbtn,
+.about-stopbtn {
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin: 30px 0px 0px 0px;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* Play buttons */
+.btn-audio.play,
+.about-playbtn {
+  background-color: #28a745;
+}
+
+.btn-audio.play:hover,
+.about-playbtn:hover {
+  background-color: #1e7e34;
+  transform: translateY(-2px);
+}
+
+.btn-audio.play:active,
+.about-playbtn:active {
+  background-color: #155d27;
+  transform: translateY(0);
+}
+
+/* Stop buttons */
+.btn-audio.stop,
+.about-stopbtn {
+  background-color: #dc3545;
+}
+
+.btn-audio.stop:hover,
+.about-stopbtn:hover {
+  background-color: #a71d2a;
+  transform: translateY(-2px);
+}
+
+.btn-audio.stop:active,
+.about-stopbtn:active {
+  background-color: #7a111e;
+  transform: translateY(0);
+}
+
+/*  Contact Form */
+form {
+  padding: 12px;
+  width: 100%;
+  max-width: 400px;
+  border: 2px solid darkblue;
+  border-radius: 6px;
+  background: #f0f6ff;
+  margin: 10px auto;
+  font-family: Arial, sans-serif;
+  font-size: 13px;
+  box-sizing: border-box;
+  margin-bottom: 30px;
+}
+
+/* Labels */
+form label {
+  display: block;
+  margin-bottom: 2px;
+  font-weight: bold;
+  font-size: 12px;
+  color: #240a77;
+}
+
+/* Inputs  */
+form input,
+form textarea {
+  width: 100%;
+  padding: 6px;
+  margin-bottom: 8px;
+  border: 1px solid #cfd8e3;
+  border-radius: 4px;
+  font-size: 12px;
+  font-family: inherit;
+  box-sizing: border-box;
+}
+
+/* Textarea */
+form textarea {
+  min-height: 60px;
+  resize: vertical;
+}
+
+/* Buttons */
+form button {
+  background: #240a77;
+  color: white;
+  padding: 6px 12px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 12px;
+  margin-right: 6px;
+
+}
+
+form button:hover {
+  background: #004080;
+}
+
+/* Contact Form Buttons */
+form .fancy-btn {
+  background: #240a77;
+  color: white;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  margin: 0.5rem;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+form .fancy-btn:hover {
+  background: #240a77;
+  color: rgb(255, 213, 0);
+  text-shadow: #0056b3;
+  
+}
+
+/* Ensure buttons dont stick together */
+form div {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.rounded {
+  padding: 10px 16px;
+  font-size: 18px;
+  margin: 5px;
+  background-color: white;
+  color: darkblue;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.rounded:hover {
+  background-color: #0056b3;
+}
+
+.rounded:active {
+  background-color: #004080;
+  transform: scale(0.95);
+}
+}

@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="About Trust Eye Hospital - Learn about our mission, vision, and services for visually impaired persons.">
+  <title>About Us - Trust Eye Hospital</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <link rel="icon" href="assets/images/logo.png">
+  <script src="assets/js/font-resize.js"></script>
+  <meta property="og:title" content="About Trust Eye Hospital">
+  <meta property="og:description"
+    content="Learn about Trust Eye Hospital's mission, vision, doctors, and services for visually impaired persons.">
+  <meta property="og:image" content="assets/images/og-image.jpg">
+  <meta property="og:type" content="website">
+  <style>
+    .fancy-btn {
+      background: #004080;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: transform 0.3s ease, background 0.3s ease;
+    }
+
+    .fancy-btn:hover {
+      transform: scale(1.05);
+      background: #002a52;
+    }
+  </style>
+
+<!-- Hotjar Tracking Code for Trust Eye Hospital -->
+<script>
+    (function(h,o,t,j,a,r){
+        h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+        h._hjSettings={hjid:6532446,hjsv:6};
+        a=o.getElementsByTagName('head')[0];
+        r=o.createElement('script');r.async=1;
+        r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+        a.appendChild(r);
+    })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+</script>
+</head>
+
+<body>
+  <header role="banner">
+    <div class="logoPic">
+      <img src="assets/images/logoHead.png" alt="Trust Eye Hospital logo" width="300" >
+    </div>
+    <nav class="navigation" role="navigation" aria-label="Main Navigation">
+      <ul class="nav">
+        <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+        <li><a href="about.html" aria-current="page"><i class="fa-solid fa-circle-info"></i> About Us</a></li>
+        <li><a href="contact.html"><i class="fa-solid fa-envelope"></i> Contact</a></li>
+      </ul>
+      <div class="font-resize" aria-label="Font Resize Controls">
+        <button id="btnDecreaseFontSize" class="rounded" aria-label="Decrease font size">A-</button>
+        <button id="btnIncreaseFontSize" class="rounded large" aria-label="Increase font size">A+</button>
+        <div aria-live="polite" class="sr-only" id="font-announcement"></div>
+      </div>
+    </nav>
+  </header>
+
+
+  <button onclick="playAudio()" class="about-playbtn" aria-label="Play about page audio">▶️ Play Audio</button>
+  <button onclick="stopAudio()" class="about-stopbtn" aria-label="Stop about page audio">⏹️ Stop Audio</button>
+
+  <main role="main">
+    <div class="welcomeMessege">
+      <h1>About Trust Eye Hospital</h1>
+    </div>
+
+    <article>
+      <!-- Intro -->
+      <section class="about-hospital">
+        <p>
+          Established in 1998, <strong>Trust Eye Hospital</strong> has been a pioneer in providing
+          affordable and quality eye care services. With a special focus on
+          <span class="highlight-span">visually impaired patients</span>,
+          we combine modern technology with compassionate care to restore hope and independence.
+        </p>
+      </section>
+
+      <!-- Mission & Vision -->
+      <section class="MissionVision">
+        <h1 class="MissionHeading"><u><b>Our Mission</b></u></h1>
+        <p>
+          Our mission is to eliminate preventable blindness through early diagnosis, advanced treatment,
+          and rehabilitation programs. We believe every person deserves the gift of sight, regardless
+          of their financial background.
+        </p>
+        <div class="custom-div">
+          <span style="font-size:xx-large"><b>Vision: </b></span> is not just about eyesight, but about <span class="highlight-span">quality of life</span>.
+          That is why we extend our services to rural and underserved areas.
+        </div>
+      </section>
+
+
+        <h1 class="TeamHeading">Our Team of Doctors</h1>
+        <ul>
+          <li><b>Dr. Khan</b> – Specialist in Cataract & General Ophthalmology</li>
+          <li><b>Dr. Ahmed</b> – Expert in Retinal Diseases</li>
+          <li><b>Dr. Fatima</b> – Low Vision Rehabilitation Specialist</li>
+        </ul>
+        <div class="childPic">
+          <img src="assets/images/team.png" alt="Team Of Doctors" loading="lazy" height="100%" width="100%">
+        </div>
+      <!-- Specificity demo-->
+      <section class="about-hospital">
+        <h2>Commitment to Quality</h2>
+        <p class="demo">
+          We continuously upgrade our facilities to meet international standards, ensuring safe and effective care.
+        </p>
+      </section>
+
+      <!-- Collapsible -->
+      <section class="about-hospital">
+        <h2>Our Journey</h2>
+        <details>
+          <summary>Read more</summary>
+          <p>
+            From a single clinic in 1998, we have grown into a full-fledged hospital with specialized
+            departments, outreach programs, and partnerships with global health organizations.
+          </p>
+        </details>
+      </section>
+
+      <!-- Fancy Button -->
+      <section class="about-hospital">
+        <h2>Support Our Work</h2>
+        <p>Join us in the fight against preventable blindness by supporting our mission.</p>
+        <button class="fancy-btn" aria-label="Donate to Trust Eye Hospital">Donate Now</button>
+      </section>
+
+      <!-- Media -->
+      <section class="about-hospital">
+        <h2>Introduction Video</h2>
+        <video controls width="100%" aria-label="Introduction video about Trust Eye Hospital">
+          <source src="assets/media/intro.mp4" type="video/mp4">
+          <track src="assets/media/intro-captions.vtt" kind="captions" srclang="en" label="English">
+          Your browser does not support the video tag. Please
+          <a href="assets/media/intro.mp4">download the video</a> instead.
+        </video>
+      </section>
+    </article>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer" role="contentinfo">
+    <p>&copy; 2025 Trust Eye Hospital</p>
+    <p>
+      <a href="https://www.who.int" target="_blank" rel="noopener" class="imp-text">Learn about global blindness
+        prevention</a> |
+      <a href="mailto:info@trusteyehospital.org" class="imp-text">Email Us</a> |
+      <a href="assets/media/brochure.pdf" download class="imp-text">Download Hospital Brochure</a>
+    </p>
+  </footer>
+
+  <!-- Audio -->
+  <audio id="hospitalAudio">
+    <source src="assets/audio/about.mp3" type="audio/mpeg">
+  </audio>
+
+
+  <script>
+    const audio = document.getElementById("hospitalAudio");
+    function playAudio() { audio.play(); }
+    function stopAudio() { audio.pause(); audio.currentTime = 0; }
+  </script>
+</body>
+
+</html>

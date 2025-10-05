@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Contact Trust Eye Hospital - Reach out to us for appointments and services.">
+  <title>Contact - Trust Eye Hospital</title>
+  <link rel="icon" href="assets/images/logo.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <script src="assets/js/font-resize.js"></script>
+  <!-- Hotjar Tracking Code for Site 6532398 (name missing) -->
+<script>
+    (function(h,o,t,j,a,r){
+        h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+        h._hjSettings={hjid:6532398,hjsv:6};
+        a=o.getElementsByTagName('head')[0];
+        r=o.createElement('script');r.async=1;
+        r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+        a.appendChild(r);
+    })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+</script>
+
+</head>
+
+<body>
+  <div class="data">
+    <header role="banner">
+      <div class="logoPic">
+        <img src="assets/images/logoHead.png" alt="Trust Eye Hospital logo" width="300">
+      </div>
+      <nav class="navigation">
+        <ul class="nav">
+          <li><a href="index.html" aria-current="page"><i class="fas fa-home"></i> Home</a></li>
+          <li><a href="about.html"><i class="fa-solid fa-circle-info"></i> About Us</a></li>
+          <li><a href="contact.html"><i class="fa-solid fa-envelope"></i> Contact</a></li>
+        </ul>
+        <div class="font-resize" aria-label="Font Resize Controls">
+          <button id="btnDecreaseFontSize" class="rounded" aria-label="Decrease font size">A-</button>
+          <button id="btnIncreaseFontSize" class="rounded large" aria-label="Increase font size">A+</button>
+          <div aria-live="polite" class="sr-only" id="font-announcement"></div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+
+      <button class="btn-audio play" onclick="playAudio()" aria-label="Play welcome audio">▶️ Play Audio</button>
+      <button class="btn-audio stop" onclick="stopAudio()" aria-label="Stop welcome audio">⏹️ Stop Audio</button>
+      <div class="contactUs">
+        <h1>Contact Us</h1>
+      </div>
+      <section class="about-hospital">
+        <p>You can reach <span class="highlight-span">Trust Eye Hospital</span> through our appointment desk, phone
+          support, or online form. Our dedicated staff ensures quick responses for all queries, whether it is about
+          <span class="highlight-span">appointments</span>, <span class="highlight-span">rehabilitation programs</span>,
+          or general information.</p>
+      </section>
+
+      <div class="f">
+        <form class="main">
+          <label for="name">Full Name:</label>
+          <input type="text" id="name" name="name" placeholder="name" required>
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" placeholder="email" required>
+
+          <label for="website">Website:</label>
+          <input type="url" id="website" name="website" placeholder="website">
+
+          <label for="appointment">Appointment Date:</label>
+          <input type="date" id="appointment" name="appointment">
+
+          <label for="feedback">Your Feedback:</label>
+          <textarea id="feedback" name="feedback" rows="4" placeholder="Let us know your thoughts..."
+            required></textarea>
+
+          <div>
+            <button type="submit" class="fancy-btn">Submit</button>
+            <button type="reset" class="fancy-btn">Reset</button>
+          </div>
+        </form>
+      </div>
+
+      <article class="about-hospital">
+        <h2>Other Ways to Connect</h2>
+        <details>
+          <summary>Helpline Numbers</summary>
+          <p>+92-300-1234567 (24/7 Emergency)</p>
+          <p>+92-42-7654321 (General Enquiries)</p>
+        </details>
+        <details>
+          <summary>Our Location</summary>
+          <p>123 Trust Eye Avenue, Lahore, Pakistan</p>
+        </details>
+      </article>
+
+      <div>
+        <p class="specificity-demo" ">For urgent cases, our emergency desk ensures patients are
+          treated immediately, proving our <span class="highlight-span"><u>commitment to sight-saving care</u></span>.</p>
+      </div>
+
+
+    </main>
+
+    <footer class="site-footer">
+      <p>&copy; 2025 Trust Eye Hospital</p>
+      <p>
+        <a href="https://www.who.int" target="_blank" rel="noopener" class="imp-text">Learn about global blindness
+          prevention</a> |
+        <a href="mailto:info@trusteyehospital.org" class="imp-text">Email Us</a> |
+        <a href="assets/media/brochure.pdf" download class="imp-text">Download Hospital Brochure</a>
+      </p>
+    </footer>
+  </div>
+  <audio id="hospitalAudio">
+    <source src="assets/audio/contact.mp3" type="audio/mpeg">
+  </audio>
+
+  <script>
+    const audio = document.getElementById("hospitalAudio");
+    function playAudio() { audio.play(); }
+    function stopAudio() { audio.pause(); audio.currentTime = 0; }
+  </script>
+
+</body>
+
+</html>
