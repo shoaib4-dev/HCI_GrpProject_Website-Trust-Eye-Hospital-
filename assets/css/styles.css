@@ -816,6 +816,7 @@ form div {
   body {
     margin: 10px;
     font-size: medium;
+    background-color:white;
   }
    .rounded{
     font-size: small;
@@ -860,6 +861,7 @@ form div {
   body {
     margin: 5px;
     font-size: small;
+     background-color:white;
   }
   .rounded{
     font-size: small;
