@@ -404,110 +404,7 @@ form div {
 
 
 @media (prefers-color-scheme: dark) {
-  /* body {
-    background: black;
-    color: #ffffff;
-  }
 
-  .navigation {
-    background: #1a1a40;
-  }
-
-  .nav li a {
-    color: #ffeb3b;
-  }
-
-  .nav li a:hover {
-    text-decoration: underline;
-    color: #ffffff;
-  }
-
-  .about-hospital {
-    background: #1e1e2f;
-    border-left-color: #90caf9;
-  }
-
-  .specificity-demo {
-    color: white;
-  }
-
-  .site-footer {
-    background: #1a1a40;
-    color: #ccc;
-  }
-
-  .site-footer .imp-text {
-    background: #004080;
-    color: #ffeb3b;
-  }
-
-  .site-footer .imp-text:hover {
-    background: #0056b3;
-    color: #fff;
-  }
-
-  form {
-    background: #1f1f2e;
-    border-color: #003366;
-  }
-
-  form label {
-    color: white;
-  }
-
-  .highlight-span {
-    color: yellow;
-  }
-
-  .custom-div {
-    color: white;
-    background-color: #1f1f2e;
-  }
-
-  form input,
-  form textarea {
-    background: white;
-    color: black;
-    border-color: #666;
-  }
-
-  .rounded {
-    background-color: #222;
-    color: #ffeb3b;
-  }
-
-  .rounded:hover {
-    background-color: #333;
-    color: #ffffff;
-  }
-
-  .emergency-row td {
-    background: #b30000;
-    color: #ffff00;
-  }
-
-  .btn-audio.play,
-  .about-playbtn {
-    background-color: #2e7d32;
-  }
-
-  .btn-audio.stop,
-  .about-stopbtn {
-    background-color: #c62828;
-  }
-
-  
-  .services-content {
-    background-color: #121212;
-  }
-
-  .childPic img {
-    border: 2px solid #444;
-  }
-
-  .logoPic {
-    background-color: white;
-  } */
   .logoPic {
   justify-content: center;
 
@@ -883,7 +780,7 @@ form .fancy-btn:hover {
   
 }
 
-/* Ensure buttons dont stick together */
+
 form div {
   display: flex;
   gap: 10px;
@@ -911,4 +808,110 @@ form div {
   background-color: #004080;
   transform: scale(0.95);
 }
+}
+
+
+/* For tablets */
+@media (max-width: 768px) {
+  body {
+    margin: 10px;
+    font-size: medium;
+  }
+   .rounded{
+    font-size: small;
+    padding: 3px 3px;
+  }
+  .navigation {
+   
+    text-align: center;
+  }
+
+  .nav {
+   
+    gap: 7px;
+  }
+ 
+ .services-content {
+    flex-direction: row;
+    margin: 0;
+    
+  }
+
+  .childPic img {
+    width:auto;
+    height: auto;
+  }
+
+  .TeamHeading,
+  .MissionHeading {
+    font-size: 32px;
+  }
+
+  form {
+    width: 90%;
+    max-width: 500px;
+  }
+
+
+}
+
+/* For mobiles */
+@media (max-width: 480px) {
+  body {
+    margin: 5px;
+    font-size: small;
+  }
+  .rounded{
+    font-size: small;
+    padding: 3px 3px;
+  }
+  .navigation {
+    flex-direction: row;
+    padding: 10px;
+  }
+
+  .nav {
+    flex-direction: row;
+    margin-top: 10px;
+    gap:2px;
+  }
+.nav li a {
+  color: white;
+  text-decoration: none;
+  
+}
+  .welcomeMessege,
+  .contactUs {
+    font-size: large;
+    text-align: center;
+  }
+
+  .TeamHeading,
+  .MissionHeading {
+    font-size: 24px;
+  }
+
+  .services-content {
+    flex-direction: row;
+    margin: 0;
+    
+  }
+
+  .childPic img {
+    width:auto;
+    height: auto;
+  }
+
+  form {
+    width: 100%;
+    max-width: 350px;
+    margin: 10px auto;
+    padding: 10px;
+  }
+
+  form button,
+  form .fancy-btn {
+    width: 100%;
+    margin: 5px 0;
+  }
 }
